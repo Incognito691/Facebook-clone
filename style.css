@@ -1,0 +1,285 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background: white;
+}
+
+.container {
+  background: rgb(233, 232, 232);
+  padding-top: 72px;
+  padding-bottom: 112px;
+}
+
+.content {
+  margin: 20px auto;
+  max-width: 980px;
+}
+
+.content > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.left-content {
+  width: 480px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.facebook-logo {
+  margin-top: 112px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.facebook-logo > img {
+  height: 106px;
+  margin: -28px;
+}
+
+.facebook-quote {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.842);
+}
+
+.insert {
+  background: white;
+  width: 395px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 40px;
+}
+
+.inputtext > input {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 17px;
+}
+
+.inputtext > input:focus {
+  border: 1px solid rgb(55, 55, 238);
+}
+
+.btn-login {
+  background-color: rgb(55, 55, 238);
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.forgot-key > a {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(55, 55, 238);
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  text-decoration: none;
+}
+
+hr {
+  background-color: lightgrey;
+}
+
+.newacc {
+  display: inline-block;
+  background-color: limegreen;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.create-page {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.create-page > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.create-page > a:hover {
+  text-decoration: underline;
+}
+
+.fbook-footer {
+  max-width: 980px;
+  margin: 30px auto;
+}
+
+.fbook-footer > ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.fbook-footer > ul > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.fbook-footer > ul > li > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(83, 82, 82, 0.948);
+}
+
+/*--------Responsive------------*/
+
+@media screen and (max-width: 320px) {
+  .left-content {
+    float: left;
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .right-content {
+    float: left;
+    width: 100%;
+  }
+
+  .insert {
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 7px;
+  }
+
+  .create-page {
+    float: left;
+    width: 100%;
+  }
+
+  .facebook-logo {
+    margin-top: 30px;
+    margin-bottom: -120px;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .facebook-logo > img {
+    height: 280px;
+    margin: -233px 0 0 0;
+    width: 100%;
+  }
+
+  .facebook-quote {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.842);
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .inputtext > input {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 3px solid lightgray;
+    border-radius: 6px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 15px;
+  }
+
+  .btn-login {
+    border-radius: 5px;
+    width: 50%;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 25%;
+    margin-bottom: 0px;
+  }
+
+  .forgot-key > a {
+    font-size: 15px;
+  }
+
+  .newacc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    font-size: 15px;
+    margin-top: 18px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .fbook-footer > ul {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
